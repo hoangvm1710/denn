@@ -1,62 +1,20 @@
-@import _core/color
-@import _core/mixins
+@import ./_page/index
 .home_slider
-    background: $tim
-    min-height: 368px
-    color: red
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    justify-content: center
-    align-items: center
-    display: flex
-    text-align: center
+    +den($tim)
     .btn-more
-        background: $vang
+        background: #f66f44
+        color: #ffffff
+        width: 15rem
+        height: 3rem
+        margin: 25px 50px 50px 50px
+    .btn
+        padding-top: .7rem
 .home_service
-    background: $ngoc
-    min-height: 368px
-    color: red
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    justify-content: center
-    align-items: center
-    display: flex
-    text-align: center
-    h2
-        text-transform: uppercase
-        position: relative
-        &:before
-            content: ''
-            width: 5rem
-            height: .3rem
-            background: black
-            display: block
-            position: absolute
-            transform: translateX(-50%)
-            left: 50%
-            bottom: -8px
-            opacity: 0.4
+    +den($ngoc)
+    .siz
+        font-size: 12px
 .home_bot
-    background: darken($trangnhe,3%)
-    min-height: 368px
-    color: red
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    justify-content: center
-    align-items: center
-    display: flex
-    text-align: center
-    h2
-        text-transform: uppercase
-        position: relative
-        &:before
-            content: ''
-            width: 5rem
-            height: .3rem
-            background: black
-            display: block
-            position: absolute
-            transform: translateX(-50%)
-            left: 50%
-            bottom: -8px
-            opacity: 0.4
+    +den($trangnhe,#345)
     .col-md-3.col-sm-6
         img
             width: 180px
@@ -64,98 +22,24 @@
             border-radius: 50%
             -moz-border-radius: 50%
             -webkit-border-radiuus: 50%
-.home_bot_2
-    min-height: 368px
-    color: red
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    justify-content: center
-    align-items: center
-    display: flex
-    text-align: center
-    h2
-        text-transform: uppercase
-        position: relative
-        &:before
-            content: ''
-            width: 5rem
-            height: .3rem
-            background: black
-            display: block
-            position: absolute
-            transform: translateX(-50%)
-            left: 50%
-            bottom: -8px
-            opacity: 0.4
-.home_bot_3
-    min-height: 368px
-    background: $vang
-    color: red
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    justify-content: center
-    align-items: center
-    display: flex
-    text-align: center
-    h2
-        text-transform: uppercase
-        position: relative
-        &:before
-            content: ''
-            width: 5rem
-            height: .3rem
-            background: black
-            display: block
-            position: absolute
-            transform: translateX(-50%)
-            left: 50%
-            bottom: -8px
-            opacity: 0.4
-    .btn-light
-        margin: 3px
-        width: 5rem
-        background: darken($vang,5%)
-        border-color: darken($vang,5%)
-        &:hover
-            background: white
-    .btn-more
-        background: $ngoc
-        width: 13rem
-        height: 3rem
-        font-size: 1.5rem
-    a.btn.btn-more
-        color: white
-.home_body_4
-    min-height: 368px
-    background: $do
-    color: red
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    justify-content: center
-    align-items: center
-    display: flex
-    text-align: center
-    h2
-        text-transform: uppercase
-        position: relative
-        &:before
-            content: ''
-            width: 5rem
-            height: .3rem
-            background: black
-            display: block
-            position: absolute
-            transform: translateX(-50%)
-            left: 50%
-            bottom: -8px
-            opacity: 0.4
-    .abc
-        width: 80px
-        height: 80px
-        background: $ngoc
+    .siz
+        font-size: 12px
+    h5 
+        margin-top: 30px
+    .fa
+        width: 2rem
+        height: 2rem
+        color: #fff
+        background-color: lighten(#a8adb2,10%)
         border-radius: 50%
-        -moz-border-radius: 50%
-        -webkit-border-radiuus: 50%
-        margin-top: 1rem
-        display: block
-
+        position: relative
+        margin: 5px
+        &:before
+                position: absolute;
+                top: 9px;
+                right: 8px;
+                font-size: 15px;
+                left: 8px
 
 
 
