@@ -1,1 +1,156 @@
 @import ../_core/nguyen
+.home_slider
+    +den($tim)
+    .btn-more
+        background: #f66f44
+        color: #ffffff
+        width: 15rem
+        height: 3rem
+        margin: 25px 50px 50px 50px
+        &:hover
+            background-color: darken(#f66f44,10%)
+            box-shadow: 0px 2px darken(#f66f44,20%)
+    .btn
+        padding-top: .7rem
+.home_service
+    +den($ngoc)
+    .siz
+        font-size: 12px
+.home_bot
+    +den($trangnhe,#345)
+    .col-md-3.col-sm-6
+        img
+            width: 180px
+            height: 180px
+            border-radius: 50%
+            -moz-border-radius: 50%
+            -webkit-border-radiuus: 50%
+    .siz
+        font-size: 12px
+    h5 
+        margin-top: 30px
+    .fa
+        width: 2rem
+        height: 2rem
+        color: #fff
+        background-color: lighten(#a8adb2,10%)
+        border-radius: 50%
+        position: relative
+        margin: 5px
+        &:before
+                position: absolute;
+                top: 9px;
+                right: 8px;
+                font-size: 15px;
+                left: 8px
+
+.home_bot_2
+    +den(#fff,#345)
+    .progress-circle
+        position: relative
+        display: inline-block
+        margin: 1rem
+        width: 140px
+        height: 140px
+        border-radius: 50%
+        background-color: #ebebeb
+        &:after
+            content: ''
+            display: inline-block
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            -webkit-animation: colorload 2s
+            animation: colorload 2s
+        span
+            font-size: 1.5rem
+            color: #8b8b8b
+            position: absolute
+            left: 50%
+            top: 50%
+            display: block
+            width: 120px
+            height: 120px
+            line-height: 120px
+            margin-left: -60px
+            margin-top: -60px
+            text-align: center
+            border-radius: 50%
+            background: #fff
+            z-index: 1
+    .progress-90
+        &:after
+            background-image: linear-gradient(54deg, #30bae7 50%, transparent 50%, transparent), linear-gradient(270deg, #30bae7 50%, #ebebeb 50%, #ebebeb)
+    .progress-75
+        &:after
+            background-image: linear-gradient(0deg, #fc3154 50%, transparent 50%, transparent), linear-gradient(270deg, #fc3154 50%, #ebebeb 50%, #ebebeb)
+    .progress-70
+        &:after
+            background-image: linear-gradient(-18deg, #15c7a8 50%, transparent 50%, transparent), linear-gradient(270deg, #15c7a8 50%, #ebebeb 50%, #ebebeb)
+    .progress-85
+        &:after
+            background-image: linear-gradient(36deg, #eb7d4b 50%, transparent 50%, transparent), linear-gradient(270deg, #eb7d4b 50%, #ebebeb 50%, #ebebeb)
+
+    @-webkit-keyframes colorload
+        0% 
+            opacity: 0
+            transform: rotate(0deg)
+        100%
+            opacity: 1
+            transform: rotate(360deg)
+.home_bot_3
+    +den($vang,#345)
+    ul
+        margin-right: 4rem
+    .btn-light
+        width: 5rem
+        background-color: darken($vang,5%)
+        border-color: darken($vang,3%)
+        &:hover
+            background-color: #fff
+    .btn-more
+        background-color: $ngoc
+        color: #ffffff
+        width: 15rem
+        height: 3rem
+        padding-top: .8rem
+        margin-bottom: 3rem
+        &:hover
+            background-color: lighten($ngoc,20%)
+            box-shadow: 0px 2px darken($ngoc,10%)
+.home_bot_4
+    +den($do)
+    img
+        max-width: 120px
+        border-radius: 50%
+    a
+        color: darken(#fff900,10%)
+        text-decoration: none
+.home_bot_5
+    +den($xanh)
+    .xyz
+        display: flex
+        justify-content: center
+        align-items: center
+        .col-sm-6
+            margin-top: 2rem
+    .form-control
+        border: 1px solid darken($xanh,10%)
+        background-color: darken($xanh,10%)
+        color: #ffffff
+        box-shadow: none 
+        &:hover
+            background-color: darken($xanh,10%)
+            border-color: darken($xanh,10%)
+            color: #fff
+    ::placeholder
+        color: #fff
+    .btn-here
+        background-color: #30bae7
+        color: #fff
+        width: 15rem
+        height: 3.5rem
+        padding: 1rem 3rem
+        &:hover
+            background-color: darken(#30bae7,10%)
+            box-shadow: 0px 2px darken($xanh,30%)

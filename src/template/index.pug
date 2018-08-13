@@ -75,3 +75,112 @@ block main
 					a.fa.fa-facebook(href="#")
 					a.fa.fa-twitter(href="#")
 					a.fa.fa-envelope-o(href="#")
+	section.home_bot_2
+		.container
+			.row
+				.col
+					h2 WE GOT SKILLS!
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eveniet. Omnis, voluptates? Natus recusandae quod quisquam sed perspiciatis suscipit culpa cupiditate dolor
+			.row.mt-5
+				-for(x = 1;x < 5;x++)
+					.col-sm-6.col-md-3
+						-if(x==1)
+							.progress-circle.progress-90
+								span 90%
+							h3 WEB DESIGN
+						-if(x==2)
+							.progress-circle.progress-75
+								span 75%
+							h3 HTML / CSS
+						-if(x==3)
+							.progress-circle.progress-70
+								span 70%
+							h3 GRAPHIC DESIGN
+						-if(x==4)
+							.progress-circle.progress-85
+								span 85%
+							h3 UI / UX
+	section.home_bot_3
+		.container
+			.row
+				.col
+					h2 OUR PORTFOLIO
+					p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam
+			.row
+				.col
+					ul
+						lia.btn.btn-light(href="#") ALL
+						lia.btn.btn-light(href="#") WEB
+						lia.btn.btn-light(href="#") APPS
+						lia.btn.btn-light(href="#") ICONS
+			.row
+				-for(x = 1;x < 5;x++)
+					.col-md-6.col-sm-6
+						img(src="./img/index_body_laptop_"+x+".png", alt="")
+						-if(x==1)
+							p Isometric Perspective Mock-Up
+						-if(x==2)
+							p Time Zone App UI
+						-if(x==3)
+							p Viro Media Players UI copy 2
+						-if(x==4)
+							p Blog / Magazine Flat UI Kit
+			.row
+				.col
+					a.btn.btn-more(href="#") LOAD MORE PROJECTS
+	section.home_bot_4
+		.container
+			.row
+				.col
+					h2 WHAT POEPLE SAY ABOUT US
+					p Our clients love us! 
+			.row.mt-5
+				.col-sm-6
+					.row.mt-5
+						.col-md-4
+							img(src="./img/index_body_hinh1.png", alt="")
+						.col-md-8
+							p.left Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt aut fugit dolore adipisci id veniam nesciunt! Minus,
+							h3.left CHANEL IMAN
+							a.abc(href="#") CEO of Pinterest
+				.col-sm-6
+					.row.mt-5
+						.col-md-4
+							img(src="./img/index_body_hinh1.png", alt="")
+						.col-md-8
+							p.left Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt aut fugit dolore adipisci id veniam nesciunt! Minus,
+							h3.left CHANEL IMAN
+							a.abc(href="#") CEO of Pinterest
+				.col-sm-6
+					.row.mt-5
+						.col-md-4
+							img(src="./img/index_body_hinh1.png", alt="")
+						.col-md-8
+							p.left Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt aut fugit dolore adipisci id veniam nesciunt! Minus,
+							h3.left CHANEL IMAN
+							a.abc(href="#") CEO of Pinterest
+				.col-sm-6
+					.row.mt-5
+						.col-md-4
+							img(src="./img/index_body_hinh1.png", alt="")
+						.col-md-8
+							p.left Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt aut fugit dolore adipisci id veniam nesciunt! Minus,
+							h3.left CHANEL IMAN
+							a(href="#") CEO of Pinterest
+	section.home_bot_5
+		.container
+			.row
+				.col
+					h2 GET IN TOUCH
+					p 1600 Pennsylvania Ave NW, Washington, DC 20500, United States o
+			.row.xyz
+				.col-md-5.col-sm-6
+					input.form-control(type='text', placeholder='Your Name*')
+				.col-md-5.col-sm-6
+					input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Your Email*')
+			.row.xyz.mt-4
+				.col-md-10.col-sm
+					textarea#exampleFormControlTextarea1.form-control(rows='5' , placeholder='Your Message*')
+			.row.mt-4
+				.col
+					a.btn.btn-here(href="#") SEND MESSAGE
