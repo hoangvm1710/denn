@@ -1,5 +1,5 @@
 extends _layout/layout.pug
-block main 
+block main
 	section.home_slider
 		.container
 			.row
@@ -12,7 +12,9 @@ block main
 			.row
 				.col
 					h2 SERVICES WE PROVIDE
-					p We are working with both individuals and businesses from all over the globe to create awesome websites and applications.
+					.me.mt-5
+						p We are working with both individuals and businesses from all over the globe
+						p.mh to create awesome websites and applications.
 			.row.mt-5
 				.col-md-3.col-sm-6
 					img(src="./img/home_icon_1.png", alt="")
@@ -35,7 +37,8 @@ block main
 			.row
 				.col
 					h2 MEET OUR BEAUTIFUL TEAM
-					p We are a small team of designers and developers, who help brands with big ideas.
+					.me.mt-5
+						p We are a small team of designers and developers, who help brands with big ideas.
 			.row.mt-5
 				.col-md-3.col-sm-6
 					img(src="./img/index_body_hinh1.png", alt="")
@@ -80,7 +83,9 @@ block main
 			.row
 				.col
 					h2 WE GOT SKILLS!
-					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eveniet. Omnis, voluptates? Natus recusandae quod quisquam sed perspiciatis suscipit culpa cupiditate dolor
+					.me.mt-5
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eveniet. Omnis, voluptates? Natus recusandae quod quisquam sed
+						p.mh perspiciatis suscipit culpa cupiditate dolor
 			.row.mt-5
 				-for(x = 1;x < 5;x++)
 					.col-sm-6.col-md-3
@@ -105,7 +110,9 @@ block main
 			.row
 				.col
 					h2 OUR PORTFOLIO
-					p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam
+					.me.mt-5
+						p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur
+						p.mh adipisci velit, sed quia non numquam
 			.row
 				.col
 					ul
@@ -133,8 +140,9 @@ block main
 			.row
 				.col
 					h2 WHAT POEPLE SAY ABOUT US
-					p Our clients love us! 
-			.row.mt-5
+					.me.mt-5
+						p Our clients love us! 
+			.row.mt-3
 				.col-sm-6
 					.row.mt-5
 						.col-md-4
@@ -172,7 +180,8 @@ block main
 			.row
 				.col
 					h2 GET IN TOUCH
-					p 1600 Pennsylvania Ave NW, Washington, DC 20500, United States o
+					.me.mt-5
+						p 1600 Pennsylvania Ave NW, Washington, DC 20500, United States o
 			.row.xyz
 				.col-md-5.col-sm-6
 					input.form-control(type='text', placeholder='Your Name*')
@@ -180,7 +189,7 @@ block main
 					input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Your Email*')
 			.row.xyz.mt-4
 				.col-md-10.col-sm
-					textarea#exampleFormControlTextarea1.form-control(rows='5' , placeholder='Your Message*')
+					textarea#exampleFormControlTextarea1.form-control.cmt(rows='5' , placeholder='Your Message*')
 			.row.mt-4
 				.col
 					a.btn.btn-here(href="#") SEND MESSAGE

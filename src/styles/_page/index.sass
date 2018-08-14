@@ -1,4 +1,6 @@
 @import ../_core/nguyen
+.mh
+    margin-top: -1rem
 .home_slider
     +den($tim)
     .btn-more
@@ -13,11 +15,11 @@
     .btn
         padding-top: .7rem
 .home_service
-    +den($ngoc)
+    +den($ngoc,#fff,darken($ngoc,30%))
     .siz
         font-size: 12px
 .home_bot
-    +den($trangnhe,#345)
+    +den($trangnhe,#345,darken($trangnhe,70%))
     .col-md-3.col-sm-6
         img
             width: 180px
@@ -99,7 +101,7 @@
             opacity: 1
             transform: rotate(360deg)
 .home_bot_3
-    +den($vang,#345)
+    +den($vang,#345,darken($vang,55%))
     ul
         margin-right: 4rem
     .btn-light
@@ -119,15 +121,17 @@
             background-color: lighten($ngoc,20%)
             box-shadow: 0px 2px darken($ngoc,10%)
 .home_bot_4
-    +den($do)
+    +den($do,#fff,darken($do,50%))
     img
         max-width: 120px
         border-radius: 50%
     a
         color: darken(#fff900,10%)
         text-decoration: none
+    .col-sm-6
+        text-align: left
 .home_bot_5
-    +den($xanh)
+    +den($xanh,#fff,darken($xanh,50%))
     .xyz
         display: flex
         justify-content: center
@@ -154,3 +158,48 @@
         &:hover
             background-color: darken(#30bae7,10%)
             box-shadow: 0px 2px darken($xanh,30%)
+    .cmt
+        height: 250px
+header
+    +layout($tim)
+    padding-top: 5rem
+    padding-bottom: 5rem
+    padding: 40px 0
+    ul
+        padding-top: 1rem
+        ol
+            display: inline-block
+            text-align: center
+            border-radius: 5px
+            padding: 5px 20px 5px 20px
+            &:hover
+                background: #643a79
+                text-align: center
+            a
+                color: #fff
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                &:hover
+                    color: #ffffff
+                    text-decoration: none
+                    text-align: center
+footer
+    +layout(darken($xanh,5%))
+    padding-top: 1rem
+    padding-bottom: 1rem
+    ul
+        padding-top: 1rem
+        ol
+            display: inline-block
+            text-align: center
+            border-radius: 5px
+            padding: 5px 20px 5px 20px
+            font-size: 1.5rem
+            a
+                color: #fff
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                &:hover
+                    color: darken(#30bae7,5%)
+                    text-decoration: none
+                    text-align: center
+
+       

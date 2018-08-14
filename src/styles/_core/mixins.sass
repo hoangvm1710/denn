@@ -1,4 +1,4 @@
-=den($mau: #345,$cl : #fff)
+=den($mau: #345,$cl : #fff,$bf :#000)
     background: $mau
     min-height: 368px
     color: $cl
@@ -16,10 +16,15 @@
             content: ''
             width: 5rem
             height: .15rem
-            background: black
+            background: $bf
             display: block
             position: absolute
             transform: translateX(-50%)
             left: 50%
-            bottom: -8px
+            bottom: -20px
             opacity: 0.4
+=layout($mau1)
+    background-color: $mau1
+    justify-content: center
+    align-items: center
+    text-align: center
